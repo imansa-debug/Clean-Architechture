@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Domain", "CleanAr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.Data", "CleanArch.Infra.Data\CleanArch.Infra.Data.csproj", "{C4CF9166-0BD9-460D-83B1-59200EE34DF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Application", "CleanArch.Application\CleanArch.Application.csproj", "{E65A854D-C964-4489-AE86-390DCA6E5422}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Application", "CleanArch.Application\CleanArch.Application.csproj", "{E65A854D-C964-4489-AE86-390DCA6E5422}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Infra.IoC", "CleanArch.Infra.IoC\CleanArch.Infra.IoC.csproj", "{3A27D3FD-A298-45A7-9FA7-AA3902B5D6D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{E65A854D-C964-4489-AE86-390DCA6E5422}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E65A854D-C964-4489-AE86-390DCA6E5422}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E65A854D-C964-4489-AE86-390DCA6E5422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A27D3FD-A298-45A7-9FA7-AA3902B5D6D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A27D3FD-A298-45A7-9FA7-AA3902B5D6D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A27D3FD-A298-45A7-9FA7-AA3902B5D6D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A27D3FD-A298-45A7-9FA7-AA3902B5D6D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{A363532E-E3FA-4C01-91FB-840811E0B2CD} = {3351F930-8780-453D-9B87-4CC44F15A4CD}
 		{C4CF9166-0BD9-460D-83B1-59200EE34DF4} = {00042009-99BF-4D77-8595-066B52C4E6AA}
 		{E65A854D-C964-4489-AE86-390DCA6E5422} = {E705E020-E00C-438B-BFA6-0D2649832848}
+		{3A27D3FD-A298-45A7-9FA7-AA3902B5D6D6} = {7FE4F1A0-FB5D-431B-B9DF-565DA4BA2823}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93B39FBA-759A-4B6F-A628-45C4E25EE223}
