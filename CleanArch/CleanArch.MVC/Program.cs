@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CleanArch.Infra.IoC;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
@@ -11,6 +13,8 @@ namespace CleanArch.MVC
 {
     public class Program
     {
+
+
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
@@ -22,5 +26,7 @@ namespace CleanArch.MVC
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
+        
     }
 }

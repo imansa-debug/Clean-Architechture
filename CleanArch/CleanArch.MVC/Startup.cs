@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CleanArch.Infra.Data.Context;
+using CleanArch.Infra.IoC;
 
 namespace CleanArch.MVC
 {
@@ -41,7 +42,9 @@ namespace CleanArch.MVC
                 options.UseSqlServer(Configuration.GetConnectionString("UniversityDBConection"));
             });
 
-            
+            RegisterServices(services);
+          
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -73,6 +76,10 @@ namespace CleanArch.MVC
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
+        }
+        public static void RegisterServices(IServiceCollection services)
+        {
+            DependencyContainer.RegisterServices(services);
         }
     }
 }
