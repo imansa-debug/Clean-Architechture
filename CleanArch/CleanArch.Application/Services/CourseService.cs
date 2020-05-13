@@ -24,5 +24,10 @@ namespace CleanArch.Application.Services
                 Courses = _courseRepository.GetCourses()
             };
         }
+        public Course GetCourseById(int courseId)
+        {
+            Course course = _courseRepository.GetCourseById(courseId);
+            return course;
+        }
     }
 }

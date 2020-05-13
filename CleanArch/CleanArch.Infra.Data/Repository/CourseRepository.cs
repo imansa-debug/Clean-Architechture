@@ -9,12 +9,18 @@ namespace CleanArch.Infra.Data.Repository
 {
     public class CourseRepository : ICourseRepository
     {
-        private UniversityDbContext _ctx;
+        private readonly UniversityDbContext _ctx;
 
         public CourseRepository(UniversityDbContext ctx)
         {
             this._ctx = ctx;
         }
+
+        public Course GetCourseById(int courseId)
+        {
+            return _ctx.Courses.Find(courseId);
+        }
+
         public IEnumerable<Course> GetCourses()
         {
             return _ctx.Courses;
